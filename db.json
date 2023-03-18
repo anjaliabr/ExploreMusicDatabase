@@ -1,0 +1,393 @@
+{
+    "object": "list",
+    "results": [
+        {
+            "object": "page",
+            "id": "1638fa2e-cd71-49c3-9898-79d5c1b3dcd5",
+            "created_time": "2023-03-12T06:21:00.000Z",
+            "last_edited_time": "2023-03-12T06:21:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "742b66b1-a455-4187-85a5-a544e917163c"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "742b66b1-a455-4187-85a5-a544e917163c"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "257b648f-6330-4c3d-a995-ffc3d379d707"
+            },
+            "archived": false,
+            "properties": {
+                "Album": {
+                    "id": "%3Ck%40R",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "Favorite": {
+                    "id": "Ay%5Bo",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Year": {
+                    "id": "CiEb",
+                    "type": "number",
+                    "number": null
+                },
+                "Wish List": {
+                    "id": "CmQP",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Track No.": {
+                    "id": "MNFX",
+                    "type": "number",
+                    "number": null
+                },
+                "Artist": {
+                    "id": "Tmqn",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "Play URL": {
+                    "id": "_n%40r",
+                    "type": "url",
+                    "url": null
+                },
+                "Genres": {
+                    "id": "agdo",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "On Deck": {
+                    "id": "h%3AoO",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Duration": {
+                    "id": "ya%5Ea",
+                    "type": "rich_text",
+                    "rich_text": []
+                },
+                "Song Title": {
+                    "id": "title",
+                    "type": "title",
+                    "title": []
+                }
+            },
+            "url": "https://www.notion.so/1638fa2ecd7149c3989879d5c1b3dcd5"
+        },
+        {
+            "object": "page",
+            "id": "376a5ec0-49c2-490f-867d-a7c06982def9",
+            "created_time": "2023-03-12T06:02:00.000Z",
+            "last_edited_time": "2023-03-12T06:02:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "742b66b1-a455-4187-85a5-a544e917163c"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "742b66b1-a455-4187-85a5-a544e917163c"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "257b648f-6330-4c3d-a995-ffc3d379d707"
+            },
+            "archived": false,
+            "properties": {
+                "Album": {
+                    "id": "%3Ck%40R",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "Favorite": {
+                    "id": "Ay%5Bo",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Year": {
+                    "id": "CiEb",
+                    "type": "number",
+                    "number": null
+                },
+                "Wish List": {
+                    "id": "CmQP",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Track No.": {
+                    "id": "MNFX",
+                    "type": "number",
+                    "number": null
+                },
+                "Artist": {
+                    "id": "Tmqn",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "Play URL": {
+                    "id": "_n%40r",
+                    "type": "url",
+                    "url": null
+                },
+                "Genres": {
+                    "id": "agdo",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "On Deck": {
+                    "id": "h%3AoO",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Duration": {
+                    "id": "ya%5Ea",
+                    "type": "rich_text",
+                    "rich_text": []
+                },
+                "Song Title": {
+                    "id": "title",
+                    "type": "title",
+                    "title": []
+                }
+            },
+            "url": "https://www.notion.so/376a5ec049c2490f867da7c06982def9"
+        },
+        {
+            "object": "page",
+            "id": "de065038-d5fd-4eae-99b2-bc554b037ff6",
+            "created_time": "2023-03-12T06:02:00.000Z",
+            "last_edited_time": "2023-03-12T06:02:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "742b66b1-a455-4187-85a5-a544e917163c"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "742b66b1-a455-4187-85a5-a544e917163c"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "257b648f-6330-4c3d-a995-ffc3d379d707"
+            },
+            "archived": false,
+            "properties": {
+                "Album": {
+                    "id": "%3Ck%40R",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "Favorite": {
+                    "id": "Ay%5Bo",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Year": {
+                    "id": "CiEb",
+                    "type": "number",
+                    "number": null
+                },
+                "Wish List": {
+                    "id": "CmQP",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Track No.": {
+                    "id": "MNFX",
+                    "type": "number",
+                    "number": null
+                },
+                "Artist": {
+                    "id": "Tmqn",
+                    "type": "relation",
+                    "relation": [],
+                    "has_more": false
+                },
+                "Play URL": {
+                    "id": "_n%40r",
+                    "type": "url",
+                    "url": null
+                },
+                "Genres": {
+                    "id": "agdo",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "On Deck": {
+                    "id": "h%3AoO",
+                    "type": "checkbox",
+                    "checkbox": false
+                },
+                "Duration": {
+                    "id": "ya%5Ea",
+                    "type": "rich_text",
+                    "rich_text": []
+                },
+                "Song Title": {
+                    "id": "title",
+                    "type": "title",
+                    "title": []
+                }
+            },
+            "url": "https://www.notion.so/de065038d5fd4eae99b2bc554b037ff6"
+        },
+        {
+            "object": "page",
+            "id": "f915a773-cb50-457c-82ad-05f0e4df6d5c",
+            "created_time": "2023-03-12T06:02:00.000Z",
+            "last_edited_time": "2023-03-12T06:55:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "742b66b1-a455-4187-85a5-a544e917163c"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "742b66b1-a455-4187-85a5-a544e917163c"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "257b648f-6330-4c3d-a995-ffc3d379d707"
+            },
+            "archived": false,
+            "properties": {
+                "Album": {
+                    "id": "%3Ck%40R",
+                    "type": "relation",
+                    "relation": [
+                        {
+                            "id": "72e1fa05-c813-4dbd-aa5a-d401883795a0"
+                        }
+                    ],
+                    "has_more": false
+                },
+                "Favorite": {
+                    "id": "Ay%5Bo",
+                    "type": "checkbox",
+                    "checkbox": true
+                },
+                "Year": {
+                    "id": "CiEb",
+                    "type": "number",
+                    "number": 2019
+                },
+                "Wish List": {
+                    "id": "CmQP",
+                    "type": "checkbox",
+                    "checkbox": true
+                },
+                "Track No.": {
+                    "id": "MNFX",
+                    "type": "number",
+                    "number": 10
+                },
+                "Artist": {
+                    "id": "Tmqn",
+                    "type": "relation",
+                    "relation": [
+                        {
+                            "id": "a5564e8f-2176-4411-a1fc-3e5cdc0e9064"
+                        }
+                    ],
+                    "has_more": false
+                },
+                "Play URL": {
+                    "id": "_n%40r",
+                    "type": "url",
+                    "url": null
+                },
+                "Genres": {
+                    "id": "agdo",
+                    "type": "rollup",
+                    "rollup": {
+                        "type": "array",
+                        "array": [],
+                        "function": "show_original"
+                    }
+                },
+                "On Deck": {
+                    "id": "h%3AoO",
+                    "type": "checkbox",
+                    "checkbox": true
+                },
+                "Duration": {
+                    "id": "ya%5Ea",
+                    "type": "rich_text",
+                    "rich_text": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "2:97",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "2:97",
+                            "href": null
+                        }
+                    ]
+                },
+                "Song Title": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Afterthought",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Afterthought",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Afterthought-f915a773cb50457c82ad05f0e4df6d5c"
+        }
+    ],
+    "next_cursor": null,
+    "has_more": false,
+    "type": "page",
+    "page": {}
+}

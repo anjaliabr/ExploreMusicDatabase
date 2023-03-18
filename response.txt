@@ -1,0 +1,711 @@
+{
+  "tracks": 
+  {
+    "href": "https://api.spotify.com/v1/me/shows?offset=0&limit=20\n",
+    "limit": 20,
+    "next": "https://api.spotify.com/v1/me/shows?offset=1&limit=1",
+    "offset": 0,
+    "previous": "https://api.spotify.com/v1/me/shows?offset=1&limit=1",
+    "total": 4,
+    "items": [
+      {
+        "album": 
+        {
+          "album_type": "compilation",
+          "total_tracks": 9,
+          "available_markets": 
+          [
+            "CA",
+            "BR",
+            "IT"
+          ],
+          "external_urls": 
+          {
+            "spotify": "string"
+          },
+          "href": "string",
+          "id": "2up3OPMp9Tb4dAKM2erWXQ",
+          "images": 
+          [
+            {
+              "url": "https://i.scdn.co/image/ab67616d00001e02ff9ca10b55ce82ae553c8228\n",
+              "height": 300,
+              "width": 300
+            }
+          ],
+          "name": "string",
+          "release_date": "1981-12",
+          "release_date_precision": "year",
+          "restrictions": 
+          {
+            "reason": "market"
+          },
+          "type": "album",
+          "uri": "spotify:album:2up3OPMp9Tb4dAKM2erWXQ",
+          "copyrights": 
+          [
+            {
+              "text": "string",
+              "type": "string"
+            }
+          ],
+          "external_ids": 
+          {
+            "isrc": "string",
+            "ean": "string",
+            "upc": "string"
+          },
+          "genres": 
+          [
+            "Egg punk",
+            "Noise rock"
+          ],
+          "label": "string",
+          "popularity": 0,
+          "album_group": "compilation",
+          "artists": 
+          [
+            {
+              "external_urls": 
+              {
+                "spotify": "string"
+              },
+              "href": "string",
+              "id": "string",
+              "name": "string",
+              "type": "artist",
+              "uri": "string"
+            }
+          ]
+        },
+        "artists": [
+        {
+            "external_urls": {
+              "spotify": "string"
+            },
+            "followers": {
+              "href": "string",
+              "total": 0
+            },
+            "genres": [
+              "Prog rock",
+              "Grunge"
+            ],
+            "href": "string",
+            "id": "string",
+            "images": [
+              {
+                "url": "https://i.scdn.co/image/ab67616d00001e02ff9ca10b55ce82ae553c8228\n",
+                "height": 300,
+                "width": 300
+              }
+            ],
+            "name": "string",
+            "popularity": 0,
+            "type": "artist",
+            "uri": "string"
+          }
+        ],
+        "available_markets": [
+          "string"
+        ],
+        "disc_number": 0,
+        "duration_ms": 0,
+        "explicit": true,
+        "external_ids": {
+          "isrc": "string",
+          "ean": "string",
+          "upc": "string"
+        },
+        "external_urls": {
+          "spotify": "string"
+        },
+        "href": "string",
+        "id": "string",
+        "is_playable": true,
+        "linked_from": {},
+        "restrictions": {
+          "reason": "string"
+        },
+        "name": "string",
+        "popularity": 0,
+        "preview_url": "string",
+        "track_number": 0,
+        "type": "track",
+        "uri": "string",
+        "is_local": true
+      }
+    ]
+  },
+  "artists": {
+    "href": "https://api.spotify.com/v1/me/shows?offset=0&limit=20\n",
+    "limit": 20,
+    "next": "https://api.spotify.com/v1/me/shows?offset=1&limit=1",
+    "offset": 0,
+    "previous": "https://api.spotify.com/v1/me/shows?offset=1&limit=1",
+    "total": 4,
+    "items": [
+    {
+        "external_urls": {
+          "spotify": "string"
+        },
+        "followers": {
+          "href": "string",
+          "total": 0
+        },
+        "genres": [
+          "Prog rock",
+          "Grunge"
+        ],
+        "href": "string",
+        "id": "string",
+        "images": [
+          {
+            "url": "https://i.scdn.co/image/ab67616d00001e02ff9ca10b55ce82ae553c8228\n",
+            "height": 300,
+            "width": 300
+          }
+        ],
+        "name": "string",
+        "popularity": 0,
+        "type": "artist",
+        "uri": "string"
+      }
+    ]
+  },
+  "albums": {
+    "href": "https://api.spotify.com/v1/me/shows?offset=0&limit=20\n",
+167
+    "limit": 20,
+168
+    "next": "https://api.spotify.com/v1/me/shows?offset=1&limit=1",
+169
+    "offset": 0,
+170
+    "previous": "https://api.spotify.com/v1/me/shows?offset=1&limit=1",
+171
+    "total": 4,
+172
+    "items": [
+173
+      {
+174
+        "album_type": "compilation",
+175
+        "total_tracks": 9,
+176
+        "available_markets": [
+177
+          "CA",
+178
+          "BR",
+179
+          "IT"
+180
+        ],
+181
+        "external_urls": {
+182
+          "spotify": "string"
+183
+        },
+184
+        "href": "string",
+185
+        "id": "2up3OPMp9Tb4dAKM2erWXQ",
+186
+        "images": [
+187
+          {
+188
+            "url": "https://i.scdn.co/image/ab67616d00001e02ff9ca10b55ce82ae553c8228\n",
+189
+            "height": 300,
+190
+            "width": 300
+191
+          }
+192
+        ],
+193
+        "name": "string",
+194
+        "release_date": "1981-12",
+195
+        "release_date_precision": "year",
+196
+        "restrictions": {
+197
+          "reason": "market"
+198
+        },
+199
+        "type": "album",
+200
+        "uri": "spotify:album:2up3OPMp9Tb4dAKM2erWXQ",
+201
+        "copyrights": [
+202
+          {
+203
+            "text": "string",
+204
+            "type": "string"
+205
+          }
+206
+        ],
+207
+        "external_ids": {
+208
+          "isrc": "string",
+209
+          "ean": "string",
+210
+          "upc": "string"
+211
+        },
+212
+        "genres": [
+213
+          "Egg punk",
+214
+          "Noise rock"
+215
+        ],
+216
+        "label": "string",
+217
+        "popularity": 0,
+218
+        "album_group": "compilation",
+219
+        "artists": [
+220
+          {
+221
+            "external_urls": {
+222
+              "spotify": "string"
+223
+            },
+224
+            "href": "string",
+225
+            "id": "string",
+226
+            "name": "string",
+227
+            "type": "artist",
+228
+            "uri": "string"
+229
+          }
+230
+        ]
+231
+      }
+232
+    ]
+233
+  },
+234
+  "playlists": {
+235
+    "href": "https://api.spotify.com/v1/me/shows?offset=0&limit=20\n",
+236
+    "limit": 20,
+237
+    "next": "https://api.spotify.com/v1/me/shows?offset=1&limit=1",
+238
+    "offset": 0,
+239
+    "previous": "https://api.spotify.com/v1/me/shows?offset=1&limit=1",
+240
+    "total": 4,
+241
+    "items": [
+242
+      {
+243
+        "collaborative": true,
+244
+        "description": "string",
+245
+        "external_urls": {
+246
+          "spotify": "string"
+247
+        },
+248
+        "href": "string",
+249
+        "id": "string",
+250
+        "images": [
+251
+          {
+252
+            "url": "https://i.scdn.co/image/ab67616d00001e02ff9ca10b55ce82ae553c8228\n",
+253
+            "height": 300,
+254
+            "width": 300
+255
+          }
+256
+        ],
+257
+        "name": "string",
+258
+        "owner": {
+259
+          "external_urls": {
+260
+            "spotify": "string"
+261
+          },
+262
+          "followers": {
+263
+            "href": "string",
+264
+            "total": 0
+265
+          },
+266
+          "href": "string",
+267
+          "id": "string",
+268
+          "type": "user",
+269
+          "uri": "string",
+270
+          "display_name": "string"
+271
+        },
+272
+        "public": true,
+273
+        "snapshot_id": "string",
+274
+        "tracks": {
+275
+          "href": "string",
+276
+          "total": 0
+277
+        },
+278
+        "type": "string",
+279
+        "uri": "string"
+280
+      }
+281
+    ]
+282
+  },
+283
+  "shows": {
+284
+    "href": "https://api.spotify.com/v1/me/shows?offset=0&limit=20\n",
+285
+    "limit": 20,
+286
+    "next": "https://api.spotify.com/v1/me/shows?offset=1&limit=1",
+287
+    "offset": 0,
+288
+    "previous": "https://api.spotify.com/v1/me/shows?offset=1&limit=1",
+289
+    "total": 4,
+290
+    "items": [
+291
+      {
+292
+        "available_markets": [
+293
+          "string"
+294
+        ],
+295
+        "copyrights": [
+296
+          {
+297
+            "text": "string",
+298
+            "type": "string"
+299
+          }
+300
+        ],
+301
+        "description": "string",
+302
+        "html_description": "string",
+303
+        "explicit": true,
+304
+        "external_urls": {
+305
+          "spotify": "string"
+306
+        },
+307
+        "href": "string",
+308
+        "id": "string",
+309
+        "images": [
+310
+          {
+311
+            "url": "https://i.scdn.co/image/ab67616d00001e02ff9ca10b55ce82ae553c8228\n",
+312
+            "height": 300,
+313
+            "width": 300
+314
+          }
+315
+        ],
+316
+        "is_externally_hosted": true,
+317
+        "languages": [
+318
+          "string"
+319
+        ],
+320
+        "media_type": "string",
+321
+        "name": "string",
+322
+        "publisher": "string",
+323
+        "type": "show",
+324
+        "uri": "string",
+325
+        "total_episodes": 0
+326
+      }
+327
+    ]
+328
+  },
+329
+  "episodes": {
+330
+    "href": "https://api.spotify.com/v1/me/shows?offset=0&limit=20\n",
+331
+    "limit": 20,
+332
+    "next": "https://api.spotify.com/v1/me/shows?offset=1&limit=1",
+333
+    "offset": 0,
+334
+    "previous": "https://api.spotify.com/v1/me/shows?offset=1&limit=1",
+335
+    "total": 4,
+336
+    "items": [
+337
+      {
+338
+        "audio_preview_url": "https://p.scdn.co/mp3-preview/2f37da1d4221f40b9d1a98cd191f4d6f1646ad17",
+339
+        "description": "A Spotify podcast sharing fresh insights on important topics of the moment—in a way only Spotify can. You’ll hear from experts in the music, podcast and tech industries as we discover and uncover stories about our work and the world around us.\n",
+340
+        "html_description": "<p>A Spotify podcast sharing fresh insights on important topics of the moment—in a way only Spotify can. You’ll hear from experts in the music, podcast and tech industries as we discover and uncover stories about our work and the world around us.</p>\n",
+341
+        "duration_ms": 1686230,
+342
+        "explicit": true,
+343
+        "external_urls": {
+344
+          "spotify": "string"
+345
+        },
+346
+        "href": "https://api.spotify.com/v1/episodes/5Xt5DXGzch68nYYamXrNxZ",
+347
+        "id": "5Xt5DXGzch68nYYamXrNxZ",
+348
+        "images": [
+349
+          {
+350
+            "url": "https://i.scdn.co/image/ab67616d00001e02ff9ca10b55ce82ae553c8228\n",
+351
+            "height": 300,
+352
+            "width": 300
+353
+          }
+354
+        ],
+355
+        "is_externally_hosted": true,
+356
+        "is_playable": true,
+357
+        "language": "en",
+358
+        "languages": [
+359
+          "fr",
+360
+          "en"
+361
+        ],
+362
+        "name": "Starting Your Own Podcast: Tips, Tricks, and Advice From Anchor Creators\n",
+363
+        "release_date": "1981-12-15",
+364
+        "release_date_precision": "day",
+365
+        "resume_point": {
+366
+          "fully_played": true,
+367
+          "resume_position_ms": 0
+368
+        },
+369
+        "type": "episode",
+370
+        "uri": "spotify:episode:0zLhl3WsOCQHbe1BPTiHgr",
+371
+        "restrictions": {
+372
+          "reason": "string"
+373
+        }
+374
+      }
+375
+    ]
+376
+  },
+377
+  "audiobooks": {
+378
+    "href": "https://api.spotify.com/v1/me/shows?offset=0&limit=20\n",
+379
+    "limit": 20,
+380
+    "next": "https://api.spotify.com/v1/me/shows?offset=1&limit=1",
+381
+    "offset": 0,
+382
+    "previous": "https://api.spotify.com/v1/me/shows?offset=1&limit=1",
+383
+    "total": 4,
+384
+    "items": [
+385
+      {
+386
+        "authors": [
+387
+          {
+388
+            "name": "string"
+389
+          }
+390
+        ],
+391
+        "available_markets": [
+392
+          "string"
+393
+        ],
+394
+        "copyrights": [
+395
+          {
+396
+            "text": "string",
+397
+            "type": "string"
+398
+          }
+399
+        ],
+400
+        "description": "string",
+401
+        "html_description": "string",
+402
+        "edition": "Unabridged",
+403
+        "explicit": true,
+404
+        "external_urls": {
+405
+          "spotify": "string"
+406
+        },
+407
+        "href": "string",
+408
+        "id": "string",
+409
+        "images": [
+410
+          {
+411
+            "url": "https://i.scdn.co/image/ab67616d00001e02ff9ca10b55ce82ae553c8228\n",
+412
+            "height": 300,
+413
+            "width": 300
+414
+          }
+415
+        ],
+416
+        "languages": [
+417
+          "string"
+418
+        ],
+419
+        "media_type": "string",
+420
+        "name": "string",
+421
+        "narrators": [
+422
+          {
+423
+            "name": "string"
+424
+          }
+425
+        ],
+426
+        "publisher": "string",
+427
+        "type": "audiobook",
+428
+        "uri": "string",
+429
+        "total_chapters": 0
+430
+      }
+431
+    ]
+432
+  }
+433
+}
