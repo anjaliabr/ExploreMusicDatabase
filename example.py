@@ -3,48 +3,27 @@ import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 import PySimpleGUI as sg
 from PySimpleGUI.PySimpleGUI import Column, HorizontalSeparator, In, VSeperator
-from PIL import Image
-import cloudscraper
-import io
-import os
+import spotipy.util as util
+import query as prop
+import extra as ex
+import json
 
-# Searching artist
-def search_artist(client):
-    """
-    Use the Spotify client to search for a song and retriece the list of results
-    """
-    search_query = sg.popup_get_text('Enter the name of the song you want to search:')
-    results = client.search(search_query)
-    artists = results['tracks']['items'][0]['artists']
-    return [f"{artist['name']} - {artist['id']}" for artist in artists]
+info_artist = {}
+info_album = {}
+info_tracks = {}
 
 # Display the features
-def display_albums(client, artist_id):
+def display_artist(client, artist_id):
     """
     Use the Spotify client to retrieve the album names of the artist
     """
-    info = {}
-    albums = client.artist_albums(artist_id)
-    artistInfo = client.artist(artist_id)
 
-    info['Artist_Name'] = artistInfo['name']
-    info['Artist_ID'] = artist_id
-    info['Artist_Img'] = artistInfo['images'][2]['url']
+    artistInfo = prop.search_artist(client, artist_id)
+    albums = prop.search_albumbyartist(client, artist_id)
 
     album_list= [f"{album['name']} - {album['id']} - {album['total_tracks']}" for album in albums['items']]
     
-    jpg_data = (
-        cloudscraper.create_scraper(
-            browser={"browser": "firefox", "platform": "windows", "mobile": False}
-        )
-        .get(info['Artist_Img'])
-        .content
-    )
-    
-    pil_image = Image.open(io.BytesIO(jpg_data))
-    png_bio = io.BytesIO()
-    pil_image.save(png_bio, format="PNG")
-    png_data = png_bio.getvalue()
+    png_data = ex.imageExtract(artistInfo)
     
     layout_l =[
         [sg.Text('Artist Name:'), sg.Text(artistInfo['name'])],
@@ -55,8 +34,8 @@ def display_albums(client, artist_id):
     ]
 
     layout = [
+        [sg.Column(layout_r, key='-COL1-', justification='left'), sg.Column(layout_l, key='-COL1-', justification='left')],
         [sg.Text('Albums')],
-        [sg.Column(layout_l, key='-COL1-', justification='left'), sg.Column(layout_r, key='-COL2-', justification='right')],
         [sg.Listbox(album_list, key='album_list', size=(50,len(album_list)), select_mode='single',bind_return_key=True)],
         [sg.Button('OK'), sg.Cancel()]
     ]
@@ -67,10 +46,31 @@ def display_albums(client, artist_id):
         if event in (None, 'Cancel'):
             break
         if event == 'OK':
-            display_tracks(client, values['album_list'][0].split(' - ')[1], info)
+            display_albums(client, values['album_list'][0].split(' - ')[1])
 
-def display_tracks(client, album_id, info):
-    tracks = client.album_tracks(album_id)
+    info_artist = {
+        "id": artistInfo["id"],
+        "images": artistInfo["images"][2]["url"],
+        "name": artistInfo["name"]
+    }
+
+def display_albums(client, album_id):
+
+
+    with open('./spotifyAPI/albumArtist.json') as f:
+        album_dict = json.loads(f.read())
+        albums = album_dict["items"]
+        for i in range(len(albums)):
+            if albums[i]["id"] == album_id:
+                info_album = {
+                    "id": album_id,
+                    "artist": albums[i]["artists"],
+                    "album": albums[i]["name"],
+                    "images": albums[i]['images'][2]["url"],
+                    "year": albums[i]["release_date"][0:4]
+                }
+    
+    tracks = prop.search_tracks(client, album_id)
     track_list = [f"{track['track_number']} - {track['name']} - {track['id']}" for track in tracks['items']]
     
     layout = [
@@ -107,13 +107,20 @@ def final_display(client, track_id):
     )
 
 
-# Main code
-spotipy_cred = SpotifyClientCredentials(client_id="0c9398592c364794a462c4b7947126ea", client_secret="4b9755b57e1949968f3fc052651f25f2")
+# Info for client_id and client_secret
+clientId = "0c9398592c364794a462c4b7947126ea"
+secret = "4b9755b57e1949968f3fc052651f25f2"
+
+# Creating credentials
+spotipy_cred = SpotifyClientCredentials(client_id=clientId, client_secret=secret)
 client = spotipy.Spotify(client_credentials_manager=spotipy_cred)
 
+# Setting the font for the window
 sg.set_options(font=('Arial', 14))
 
 artist_list = []
+
+# Creating the layout for the main window
 layout = [
     [sg.Button('Search', key='search')],
     [sg.Listbox(artist_list, key='artist_list', size=(40,10))],
@@ -126,11 +133,10 @@ while True:
     if event in (None, 'Cancel'):
         break
     elif event == 'search':
-        artist_list = search_artist(client)
-        print(artist_list)
+        artist_list = prop.search_id(client)
         window['artist_list'].update(artist_list)
+        print(artist_list)
     elif event == 'OK':
-        display_albums(client, values['artist_list'][0].split(' - ')[1])
+        display_artist(client, values['artist_list'][0].split(' - ')[1])
 
 window.close()
-

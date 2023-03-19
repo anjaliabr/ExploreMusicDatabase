@@ -20,7 +20,7 @@ def readDatabase(databaseID, name):
     print(res.status_code)
     # print(res.text)
 
-    with open(f'./{name}.json', 'w', encoding='utf8') as f:
+    with open(f'.notionAPI/{name}.json', 'w', encoding='utf8') as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
 
 def createPage(data):
